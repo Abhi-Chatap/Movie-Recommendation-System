@@ -29,7 +29,7 @@ def recommend(movie):
 
 
 st.header('Movie Recommender System')
-movies = pickle.load(open('Movie-Recommendation-System/movie_list.pkl', 'rb'))
+movies = pickle.load(open('/movie_list.pkl', 'rb'))
 similarity = pickle.load(open('Movie-Recommendation-System/similarity.pkl', 'rb'))
 
 movie_list = movies['title'].values
