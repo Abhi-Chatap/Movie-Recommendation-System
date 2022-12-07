@@ -30,9 +30,9 @@ def recommend(movie):
 
 st.header('Movie Recommender System')
 movies = pickle.load(open(
-    'C:/Users/Abhi/Downloads/movie recommender system/movie-recommender-system-tmdb-dataset-main/movie_list.pkl', 'rb'))
+    '/movie_list.pkl', 'rb'))
 similarity = pickle.load(open(
-    'C:/Users/Abhi/Downloads/movie recommender system/movie-recommender-system-tmdb-dataset-main/similarity.pkl', 'rb'))
+    '/similarity.pkl', 'rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
